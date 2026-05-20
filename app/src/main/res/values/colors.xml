@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- background: hsl(222, 32%, 7%) -->
+    <color name="background">#0c0f17</color>
+    <!-- card: hsl(222, 28%, 10%) -->
+    <color name="card">#121620</color>
+    <!-- primary (teal): hsl(160, 84%, 45%) -->
+    <color name="primary">#12d392</color>
+    <!-- primary-foreground: hsl(222, 47%, 8%) -->
+    <color name="primary_foreground">#0a101d</color>
+    <!-- foreground: hsl(210, 40%, 98%) -->
+    <color name="foreground">#f5f9fc</color>
+    <!-- muted foreground: hsl(215, 16%, 65%) -->
+    <color name="muted_foreground">#94a3b8</color>
+</resources>

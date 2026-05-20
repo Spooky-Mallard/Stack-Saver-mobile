@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stack Saver</string>
+    <string name="offline_message">No internet connection</string>
+    <string name="offline_submessage">Open Shilling when connected to continue tracking your finances.</string>
+    <string name="retry">Retry</string>
+</resources>
