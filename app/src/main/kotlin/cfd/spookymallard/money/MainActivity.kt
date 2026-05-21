@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
     private lateinit var offlineView: View
+    private lateinit var rootLayout: View
 
     private val targetUrl = "https://money.spookymallard.cfd"
 
@@ -36,11 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         webView = findViewById(R.id.webView)
         offlineView = findViewById(R.id.offlineView)
+        rootLayout = findViewById(R.id.rootLayout)
 
         // Listen on decorView so IME close events are caught regardless of focus
         ViewCompat.setOnApplyWindowInsetsListener(window.decorView) { _, insets ->
             val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            webView.setPadding(0, bars.top, 0, bars.bottom)
+            rootLayout.setPadding(0, bars.top, 0, bars.bottom)
             val imeVisible = insets.isVisible(WindowInsetsCompat.Type.ime())
             if (!imeVisible) {
                 hideSystemBars()
