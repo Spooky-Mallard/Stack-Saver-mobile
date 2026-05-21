@@ -37,8 +37,10 @@ class MainActivity : AppCompatActivity() {
         webView = findViewById(R.id.webView)
         offlineView = findViewById(R.id.offlineView)
 
-        // Re-hide system bars when keyboard closes
-        ViewCompat.setOnApplyWindowInsetsListener(webView) { _, insets ->
+        // Pad content for system bars; re-hide bars when keyboard closes
+        ViewCompat.setOnApplyWindowInsetsListener(webView) { view, insets ->
+            val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            view.setPadding(0, bars.top, 0, bars.bottom)
             val imeVisible = insets.isVisible(WindowInsetsCompat.Type.ime())
             if (!imeVisible) {
                 hideSystemBars()
