@@ -54,7 +54,6 @@
         android:textSize="15sp"
         android:textStyle="bold"
         android:paddingStart="32dp"
-        android:paddingEnd="32dp"
-        android:cornerRadius="12dp" />
+        android:paddingEnd="32dp" />
 
 </LinearLayout>
